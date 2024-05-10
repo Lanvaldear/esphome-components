@@ -1,5 +1,5 @@
 #pragma once
-
+#include "avr/pgmspace.h"
 namespace esphome {
 namespace tm1650 {
 
