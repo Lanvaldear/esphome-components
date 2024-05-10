@@ -28,9 +28,12 @@ void TM1650Display::set_segment_map(const char *segment_map) {
     char seg_map = segment_map[map_len - 1 - i];
 
     // 7 <- PABCDEFG <- 0
-    if (seg_map <= 'G') {
+    if (seg_map <= 'A')
+    {
       this->segment_map_[i] = 1 << ('G' - seg_map);
-    } else {
+    }
+    else
+    {
       this->segment_map_[i] = TM1650_DOT_SEGMENT;
     }
   }
