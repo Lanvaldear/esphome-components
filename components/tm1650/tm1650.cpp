@@ -1,8 +1,9 @@
 #include "tm1650.h"
-#include "tm1650font.h"
 
 #include "esphome/core/log.h"
 #include "esphome/core/hal.h"
+
+#include "tm1650font.h"
 
 namespace esphome {
 namespace tm1650 {
