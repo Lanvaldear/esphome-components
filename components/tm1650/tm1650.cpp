@@ -30,7 +30,7 @@ void TM1650Display::set_segment_map(const char *segment_map) {
     // 7 <- PABCDEFG <- 0
     if (seg_map <= 'A')
     {
-      this->segment_map_[i] = 1 << ('G' - seg_map);
+      this->segment_map_[i] = 1 << ('A' - seg_map);
     }
     else
     {
